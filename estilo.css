@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Maven+Pro:wght@400;700&family=MuseoModerno:wght@400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	background-image: url(img/body.png); 
+}
+
+.contenedor{
+	display: grid;
+	gap: 10px;
+	grid-template: 
+	"header 	header 	header" 	150px 
+	"imagen 	formulario 	beneficios" 	auto
+	"footer 	footer 	footer" 	70px /
+	 350px 		auto 	250px;
+}
+
+.header{
+	grid-area: header;
+	background-color: rgba(244, 170, 204, 1); 
+	border-radius: 20px;
+}
+
+#logo{
+	width: 18%;
+	height: 140px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 6%;
+	text-decoration: none;
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2.400em;
+	font-weight: bold;
+	color: rgba(229, 29, 35, 1);
+	padding-left: 10px;
+	padding-top: 40px;
+	text-align: center;
+}
+
+h1:hover{
+	transform: scale(1.010);
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#img{
+	width: 100%;
+    height: auto;
+    margin-top: 10%; 
+    margin-left: 4%;
+}
+
+.imagen{
+	grid-area: imagen;
+	border-radius: 20px;
+}
+
+.imagen:hover{
+	transform: scale(1.100);
+	text-shadow: 2px 2px 2px #000000;
+	transition: all 0.5s ease;
+}
+
+.premio{
+	width: 100%;
+}
+
+.formulario{
+	grid-area: formulario;
+	background-color: rgba(208, 30, 132, 1);
+	border-radius: 20px;
+}
+
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.625em;
+	font-weight: bold;
+	color: rgba(254, 217, 0, 1);
+	padding-top: 20px;
+	text-align: center;
+}
+
+.rotulo{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 1.000em;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 5%;
+	padding-bottom: 0.5%;
+}
+
+.cajita{
+	width: 50%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	border-radius: 5px;
+}
+
+.completar{
+	width: 90%;
+	height: 50px;
+	margin-left: 5%;
+	border-radius: 20px;
+}
+
+.boton{
+	width: 270px;
+	height: 55px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.550em;
+	background-color: rgba(229, 29, 35, 1);
+	color: #ffffff;
+	font-weight: bold;
+	margin-left: 5%;
+	padding-top: 1%;
+	border-radius: 20px;
+	border-color: rgba(254, 217, 0, 1);
+}
+
+.boton:hover{
+	transform: scale(1.1);
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.beneficios{
+	grid-area: beneficios;
+	background-color: #F4AACC;
+	border-radius: 20px;	
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.625em;
+	font-weight: bold;
+	color: rgba(208, 30, 132, 1);
+	padding-left: 45px;
+	padding-top: 20px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
+#imgbeneficio{
+	width: 22%;
+}
+
+.benef{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 1.140em;
+	color: rgba(255, 255, 255, 1);
+}
+
+.negrita{
+	color: rgba(208, 30, 132, 1);
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #F4AACC;
+	border-radius: 20px;
+}
+
+#rescate{
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.300em;
+	color: rgba(229, 29, 35, 1);
+	padding-top: 27px;
+	padding-left: 20px;
+}
+
+.sitio{
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.300em;
+	color: rgba(229, 29, 35, 1);
+}
+
+.sitio:visited{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.300em;
+	color: rgba(229, 29, 35, 1);
+}
+
+.nombre{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.940em;
+	padding-right: 20px;
+	padding-top: 30px;
+	float: right;
+	text-decoration: none;
+	color: rgba(208, 30, 132, 1);
+}
+
+.nombre1{
+	text-decoration: none;
+}
+
+.nombre1:visited{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.940em;
+	color: rgba(208, 30, 132, 1);
+}
+
+
+
+@media (max-width: 800px) and (min-width: 600px) {
+
+	.contenedor{
+
+		grid-template: 
+		"header 	header" 	120px 
+		"imagen 	formulario" 		auto
+		"beneficios 	formulario" 	260px
+		"footer 	footer" 	80px /
+		 270px 		auto;
+ 	}
+
+ 	#logo{
+		width: 17%;
+		height: 90px;
+		margin-top: 10px;
+		margin-left: 2%;
+	}
+
+	.logito{
+		width: 100%;
+	}
+
+ 	h1{
+		font-size: 2.200em;
+		padding-top: 40px;
+	}
+
+	#img{
+	    margin-top: 5%;
+	}
+
+	.premio{
+		padding-top: 1%;
+		width: 100%;
+	}
+
+	h2{
+		font-size: 1.750em;
+	}
+
+	.cajita{
+		width: 60%;
+		margin-bottom: 3%;
+	}
+
+	.completar{
+		width: 90%;
+		height: 100px;
+		margin-left: 5%;
+	}
+
+	ul li{
+		padding-top: 2%;
+		display: inline;
+	}
+
+	h3{
+		font-size: 1.500em;
+		font-weight: bold;
+		padding-left: 60px;
+		padding-top: 3%;
+		padding-bottom: 3px;
+	}
+
+	#imgbeneficio{
+		width: 8.5%;
+		display: inline;
+	}
+
+	.benef{
+		font-family: 'Maven Pro', sans-serif;
+		font-size: 1.150em;
+		color: rgba(255, 255, 255, 1);
+		margin-bottom: 2px;
+	}
+
+	#rescate{
+		font-size: 1.000em;
+		padding-top: 30px;
+	}
+
+	.sitio{
+		font-size: 1.000em;
+	}
+
+	.sitio:visited{
+		font-size: 1.000em;
+	}
+
+	.nombre{
+		font-size: 0.750em;
+		padding-top: 35px;
+	}
+
+	.nombre1:visited{
+		font-size: 0.750em;
+	}
+
+}
+
+
+@media (max-width: 600px) {
+	
+	.contenedor{
+		grid-template: 
+		"header" 110px
+		"imagen" 200px
+		"formulario"	auto
+		"beneficios" 300px
+		"footer" 50px
+		;
+	}
+
+	#logo{
+		width: 20%;
+		height: 110px;
+		margin-top: 10px;
+		margin-left: 6%;
+	}
+
+	.logito{
+		width: 100%;
+	}
+
+	h1{
+		font-size: 1.530em;
+		padding-left: 20px;
+		padding-top: 35px;
+	}
+
+	#img{
+	    margin-top: 0.1%;
+	}
+
+	.premio{
+		padding-top: 0.1%;
+		width: 205px;
+		margin-left: 150px;
+	}
+
+	h2{
+		font-size: 1.400em;
+	}
+
+	.cajita{
+		width: 60%;
+		margin-bottom: 3%;
+	}
+
+	.completar{
+		width: 90%;
+		height: 90px;
+		margin-left: 5%;
+	}
+
+	.boton{
+		margin-bottom: 2%;
+	}
+
+	h3{
+		font-weight: bold;
+		padding-left: 30px;
+		padding-top: 3%;
+		padding-bottom: 0%;
+	}
+
+	ul li{
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+	}
+
+	#imgbeneficio{
+		width: 7%;
+	}
+
+	.benef{
+		font-size: 0.850em;
+	}
+	
+	#rescate{
+		font-size: 0.750em;
+		padding-top: 20px;
+		padding-left: 2%;
+	}
+
+	.sitio{
+		font-size: 1.100em;
+	}
+
+	.sitio:visited{
+		font-size: 1.100em;
+	}
+
+	.nombre{
+		font-size: 0.650em;
+		padding-top: 22px;
+	}
+
+	.nombre1:visited{
+		font-size: 0.650em;
+	}
+
+
+}
